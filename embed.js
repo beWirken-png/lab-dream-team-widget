@@ -16,7 +16,12 @@
   var me = document.currentScript ||
     (function () { var s = document.getElementsByTagName("script"); return s[s.length - 1]; })();
   var base = (me && me.src) ? me.src.replace(/[^/]*$/, "") : "";
-  var SRC = base + "dream-team-matcher.iframe.html";
+
+  // Dateiname der Widget-Seite im selben Ordner.
+  //  • "index.html" -> euer Setup (Widget liegt als index.html im Repo)
+  //  • sonst         -> exakter Dateiname, z. B. "dream-team-matcher.iframe.html"
+  var FILE = "index.html";
+  var SRC = base + FILE;
 
   var SIZES = {
     teaser: { w: "330px", h: "412px" }, // komplette Blüte (Bubble + Themen-Strahlen)

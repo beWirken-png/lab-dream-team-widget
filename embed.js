@@ -1,7 +1,7 @@
 /* =====================================================================
    beWirken lab · Dream-Team Matcher – Einbettungs-Loader (embed.js)
 
-   Auf eurem GitHub-Pages-Repo neben dream-team-matcher.iframe.html ablegen.
+   Auf eurem GitHub-Pages-Repo neben index.html ablegen.
    In WordPress/Elementor ("Individuelles HTML") genügt dann EINE Zeile:
 
      <script src="https://bewirken-png.github.io/lab-dream-team-widget/embed.js"></script>
@@ -16,7 +16,7 @@
   var me = document.currentScript ||
     (function () { var s = document.getElementsByTagName("script"); return s[s.length - 1]; })();
   var base = (me && me.src) ? me.src.replace(/[^/]*$/, "") : "";
-  var SRC = base + "dream-team-matcher.iframe.html";
+  var SRC = base + "index.html";
 
   var SIZES = {
     teaser: { w: "330px", h: "412px" }, // komplette Blüte (Bubble + Themen-Strahlen)
